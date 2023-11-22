@@ -1,0 +1,20 @@
+@use '../../mixins/hover.scss' as *;
+
+.nav-ppal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.nav-link {
+  padding: 0.8rem 1rem;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  @include hover {
+    &:hover {
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
