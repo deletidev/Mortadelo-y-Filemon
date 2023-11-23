@@ -32,13 +32,16 @@ export default defineConfig({
           return 'assets/js/[name]-[hash].js';
         },
         assetFileNames: assetInfo => {
-          if (assetInfo.name?.match(/\.css$/)) {
-            return 'assets/css/[name]-[hash][extname]';
+          if (assetInfo.name?.match(/\.woff$/)) {
+            return 'assets/fonts/[name]-[hash][extname]';
           }
-          if (assetInfo.name?.match(/\.(png|jpg|gif|svg)$/)) {
+          if (assetInfo.name?.match(/\.(png|jpg|gif|svg|webp)$/)) {
             return 'assets/images/[name]-[hash][extname]';
           }
-          return 'assets/[name]-[hash][extname]';
+          // if (assetInfo.name?.match(/\.css$/)) {
+          //   return 'assets/css/[name]-[hash][extname]';
+          // }
+          return 'assets/css/[name]-[hash][extname]';
         },
         manualChunks: {
           react: ['react', 'react-dom']

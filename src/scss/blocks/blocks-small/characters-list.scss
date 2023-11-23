@@ -5,8 +5,9 @@
   justify-items: center;
 
   // añadido
-  flex-grow: 1;
+  grid-template-rows: repeat(auto-fill, minmax(300px, max-content));
   width: 100%;
+  flex-grow: 1;
 }
 .characcter-detail {
   display: flex;

@@ -1,4 +1,6 @@
 import React from 'react';
+import headerMobile from '@/assets/images/header-mobile.svg';
+import headerDesktop from '@/assets/images/header-desktop.svg';
 interface Props {
   children: React.ReactNode;
 }
@@ -9,13 +11,10 @@ export const Layout: React.FC<Props> = props => {
       <header>
         <h1>
           <picture>
-            <source
-              media="(max-width: 700px)"
-              srcSet="./images/header-mobile.svg"
-            />
-            <source srcSet="./images/header-desktop.svg" />
+            <source media="(max-width: 700px)" srcSet={headerMobile} />
+            <source srcSet={headerDesktop} />
             <img
-              src="./images/header-desktop.svg"
+              src="./assets/images/header-desktop.svg"
               alt="Mortadelo y Filemón: personajes"
             />
           </picture>

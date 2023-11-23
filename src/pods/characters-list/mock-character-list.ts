@@ -1,3 +1,17 @@
+import mortadelo from '@/assets/images/mortadelo.webp';
+import filemon from '@/assets/images/filemon.webp';
+import ofelia from '@/assets/images/ofelia.webp';
+import bacterio from '@/assets/images/bacterio.webp';
+import rompetechos from '@/assets/images/rompetechos.webp';
+import superintendente from '@/assets/images/superintendente.webp';
+import irma from '@/assets/images/irma.webp';
+import directorGeneral from '@/assets/images/director-general.webp';
+import bestiajez from '@/assets/images/bestiajez.webp';
+import patrona from '@/assets/images/patrona.jpg';
+import besuguio from '@/assets/images/besuguio.webp';
+import borriquez from '@/assets/images/borriquez.webp';
+import boniguez from '@/assets/images/boniguez.webp';
+
 export const mockCharacterList = [
   {
     id: '1',
@@ -6,7 +20,7 @@ export const mockCharacterList = [
     especialidad: 'Disfraces',
     habilidades: ['Camuflaje', 'Imitaciones', 'Huida rápida'],
     amigo: 'Filemón',
-    imagen: '/images/mortadelo.webp'
+    imagen: mortadelo
   },
   {
     id: '2',
@@ -15,7 +29,7 @@ export const mockCharacterList = [
     especialidad: 'Ingeniería improvisada',
     habilidades: ['Inventor', 'Construcción rápida', 'Cálculos mentales'],
     amigo: 'Mortadelo',
-    imagen: '/images/filemon.webp'
+    imagen: filemon
   },
   {
     id: '3',
@@ -24,7 +38,7 @@ export const mockCharacterList = [
     especialidad: 'Inteligencia',
     habilidades: ['Investigación', 'Hacker', 'Descifrado de códigos'],
     amigo: 'Rompetechos',
-    imagen: '/images/ofelia.webp'
+    imagen: ofelia
   },
   {
     id: '4',
@@ -36,7 +50,7 @@ export const mockCharacterList = [
       'Explosiones accidentales'
     ],
     amigo: '',
-    imagen: '/images/bacterio.webp'
+    imagen: bacterio
   },
   {
     id: '5',
@@ -49,7 +63,7 @@ export const mockCharacterList = [
       'Agilidad para escapar'
     ],
     amigo: 'Ofelia',
-    imagen: '/images/rompetechos.webp'
+    imagen: rompetechos
   },
   {
     id: '6',
@@ -62,7 +76,7 @@ export const mockCharacterList = [
       'Resolución de conflictos'
     ],
     amigo: '',
-    imagen: '/images/superintendente.webp'
+    imagen: superintendente
   },
   {
     id: '7',
@@ -71,7 +85,7 @@ export const mockCharacterList = [
     especialidad: 'Agente encubierta',
     habilidades: ['Cambios de apariencia', 'Seducción', 'Manejo de armas'],
     amigo: '',
-    imagen: '/images/irma.webp'
+    imagen: irma
   },
   {
     id: '8',
@@ -80,7 +94,7 @@ export const mockCharacterList = [
     especialidad: 'Gestión estratégica',
     habilidades: ['Toma de decisiones', 'Planificación', 'Coordinación'],
     amigo: '',
-    imagen: '/images/director-general.webp'
+    imagen: directorGeneral
   },
   {
     id: '9',
@@ -89,7 +103,7 @@ export const mockCharacterList = [
     especialidad: 'Fuerza bruta',
     habilidades: ['Fuerza', 'Resistencia', 'Agilidad'],
     amigo: '',
-    imagen: '/images/bestiajez.webp'
+    imagen: bestiajez
   },
   {
     id: '10',
@@ -98,7 +112,7 @@ export const mockCharacterList = [
     especialidad: 'Agente encubierta',
     habilidades: ['Cambios de apariencia', 'Seducción', 'Manejo de armas'],
     amigo: '',
-    imagen: '/images/patrona.jpg'
+    imagen: patrona
   },
   {
     id: '11',
@@ -111,7 +125,7 @@ export const mockCharacterList = [
       'Confusión constante'
     ],
     amigo: '',
-    imagen: '/images/besuguio.webp'
+    imagen: besuguio
   },
   {
     id: '12',
@@ -124,7 +138,7 @@ export const mockCharacterList = [
       'Destrucción involuntaria'
     ],
     amigo: '',
-    imagen: '/images/borriquez.webp'
+    imagen: borriquez
   },
   {
     id: '13',
@@ -133,6 +147,6 @@ export const mockCharacterList = [
     especialidad: 'Olor fétido',
     habilidades: ['Mal olor', 'Repulsión involuntaria', 'Confusión nasal'],
     amigo: '',
-    imagen: '/images/boniguez.webp'
+    imagen: boniguez
   }
 ];
