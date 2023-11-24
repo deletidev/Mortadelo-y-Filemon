@@ -26,7 +26,7 @@ export const CharacterSearch: React.FC<Props> = props => {
       onSubmit={handleSubmit}
     >
       <label htmlFor="search" className="search-bar__label">
-        ENCUENTRA A TODOS LOS PERSONAJES:
+        ENCUENTRA A LOS PERSONAJES:
       </label>
       <div className="search-bar__text">
         <input
