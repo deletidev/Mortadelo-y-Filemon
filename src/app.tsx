@@ -1,5 +1,5 @@
-import { Rutas } from './rutas';
+import { CharacterScene } from './scenes';
 
 export const App = () => {
-  return <Rutas></Rutas>;
+  return <CharacterScene></CharacterScene>;
 };
