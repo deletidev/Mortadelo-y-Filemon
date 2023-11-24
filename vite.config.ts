@@ -11,7 +11,7 @@ const vitestConfig: VitestUserConfigInterface = {
   }
 };
 export default defineConfig({
-  base: '',
+  base: './',
   root: './src',
   plugins: [
     checker({ typescript: true }),
