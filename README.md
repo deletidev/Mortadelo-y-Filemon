@@ -1,6 +1,6 @@
-## Pagina desplegada en render con docker
+## Pagina desplegada en azure con docker y github actions
 
-- [Ver página en render](https://mortadeloyfilemon.onrender.com/)
+- [Ver página en azure](mortadeloyfilemon.azurewebsites.net)
 
 ## Tecnologías 🛠
 
