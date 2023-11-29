@@ -26,14 +26,19 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - id: imagename
+        uses: ASzc/change-string-case-action@v5
+        with:
+          string: ${{env.IMAGE_NAME}}
+
       - name: Build and push docker image
         run: |
-          docker build -t ${{env.IMAGE_NAME}} .
-          docker push ${{env.IMAGE_NAME}}
+          docker build -t ${{steps.imagename.outputs.lowercase}} .
+          docker push ${{steps.imagename.outputs.lowercase}}
 
       - name: Deploy to Azure
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ secrets.AZURE_APP_NAME }}
           publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
-          images: ${{env.IMAGE_NAME}}
+          images: ${{steps.imagename.outputs.lowercase}}
