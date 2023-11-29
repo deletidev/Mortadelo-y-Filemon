@@ -28,12 +28,13 @@ export const catchCharacters = async (value: string): Promise<Character[]> => {
     return mockCharacterList;
   }
 
-  const find = mockCharacterList.filter(words =>
-    words.nombre.toLowerCase().includes(value)
+  const find = mockCharacterList.filter(character =>
+    character.nombre.toLowerCase().includes(value.toLowerCase())
   );
+
   if (find.length > 0) {
     return find;
   } else {
-    throw new Error('no se ha encontrado ningún personaje');
+    throw new Error(`no se ha encontrado ningún personaje`);
   }
 };
